@@ -1,0 +1,10 @@
+.btn {
+  background-color: var(--light-blue-100);
+  color:var(--white-100);
+}
+.btn:hover {
+  color:var(--white-100);
+}
+.btn:focus {
+  box-shadow: none;
+}

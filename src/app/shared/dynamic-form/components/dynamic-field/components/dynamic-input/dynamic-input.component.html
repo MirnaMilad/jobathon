@@ -1,0 +1,19 @@
+<form [formGroup]="formName">
+  <label class="form-label dynamicFormLabel" *ngIf="field.label">{{
+    field.label
+  }}</label>
+  <input
+    [ngClass]="
+      formName.controls[field.fieldName].invalid &&
+      (formName.controls[field.fieldName].dirty ||
+        formName.controls[field.fieldName].touched)
+        ? 'error'
+        : ''
+    "
+    [id]="field.fieldName"
+    class="form-control"
+    [type]="field.type"
+    [formControlName]="field.fieldName"
+    [placeholder]="field.label"
+  />
+</form>

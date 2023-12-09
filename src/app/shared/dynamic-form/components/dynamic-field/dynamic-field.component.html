@@ -1,0 +1,4 @@
+<ng-container [ngSwitch]="field?.type" >
+    <app-dynamic-input *ngSwitchDefault [field]="field"  [formName]="formName"></app-dynamic-input>
+</ng-container>
+
