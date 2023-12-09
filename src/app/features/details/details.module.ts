@@ -6,6 +6,7 @@ import { DetailsPageComponent } from './pages/details-page/details-page.componen
 import { DynamicFormComponent } from 'src/app/shared/dynamic-form/dynamic-form.component';
 import { BtnDropdownComponent } from 'src/app/shared/components/btn-dropdown/btn-dropdown.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedConverterComponent } from 'src/app/shared/components/shared-converter/shared-converter.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     CommonModule,
-    DetailsRoutingModule,
-    DynamicFormComponent,
-    BtnDropdownComponent,
-    HttpClientModule
+    HttpClientModule,
+    SharedConverterComponent
   ]
 })
 export class DetailsModule { }

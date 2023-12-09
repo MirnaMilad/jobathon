@@ -1,0 +1,30 @@
+<div class="card p-4">
+    <div class="row">
+      <div class="col-4">
+        <app-dynamic-form [model]="inputs"></app-dynamic-form>
+      </div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col-6">
+            <app-btn-dropdown
+              [btnText]="'From'"
+              [buttonWidth]="'w-100 bg-dark text-light'"
+              [menuList]="currencyArr"
+            ></app-btn-dropdown>
+          </div>
+          <div class="col-6">
+            <app-btn-dropdown
+              [btnText]="'To'"
+              [buttonWidth]="'w-100 bg-dark text-light'"
+              [menuList]="currencyArr"
+            ></app-btn-dropdown>
+          </div>
+
+          <div class="col-12 mt-4">
+            <button class="w-100">Convert</button>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div>

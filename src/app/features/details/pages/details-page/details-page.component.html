@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row">
+  <div class="row mb-3">
     <div class="col-auto">
       <h6>EUR - European Union Euro</h6>
     </div>
@@ -9,38 +9,5 @@
       </button>
     </div>
   </div>
-  <div class="card p-4">
-    <div class="row">
-      <div class="col-4">
-        <app-dynamic-form [model]="inputs"></app-dynamic-form>
-      </div>
-      <div class="col-8">
-        <div class="row">
-          <div class="col-6">
-            <app-btn-dropdown
-              [btnText]="'From'"
-              [buttonWidth]="'w-100 bg-dark text-light'"
-              [menuList]="currencyArr"
-            ></app-btn-dropdown>
-          </div>
-          <div class="col-6">
-            <app-btn-dropdown
-              [btnText]="'To'"
-              [buttonWidth]="'w-100 bg-dark text-light'"
-              [menuList]="currencyArr"
-            ></app-btn-dropdown>
-          </div>
-
-          <div class="col-12 mt-4">
-            <button class="w-100">Convert</button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div>
-      </div>
-    </div>
+  <app-shared-converter></app-shared-converter>
   </div>
-</div>

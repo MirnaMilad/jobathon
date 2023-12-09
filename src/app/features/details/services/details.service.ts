@@ -3,12 +3,13 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DetailsService {
-inputs;
+  inputs;
+  cardsDetails;
   constructor(private httpClient: HttpClient) {
-    this.inputs={
+    this.inputs = {
       amount: {
         type: 'number',
         value: 1,
@@ -18,13 +19,11 @@ inputs;
           required: true,
         },
       },
-    }
-   };
+    };
+  }
 
-   getCurrencyArr(){
+  getCurrencyArr() {
     const url = `${environment.apiUrl}/symbols?access_key=6bd4f9b86242e656a732bf832f13a409`;
     return this.httpClient.get(url);
-   }
-
-
+  }
 }

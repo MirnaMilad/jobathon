@@ -1,1 +1,19 @@
-<router-outlet></router-outlet>
+<app-shared-converter></app-shared-converter>
+
+<div class="row" *ngFor="let card of cardsDetails">
+    <div class="col-4">
+      <div class="card m-2 p-3 text-center">
+        {{card.from}}
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card m-2 p-3 text-center">
+        {{card.to}}
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card m-2 p-3 text-center">
+        {{card.result}}
+      </div>
+      </div>
+  </div>
